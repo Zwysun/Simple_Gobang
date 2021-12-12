@@ -4,8 +4,8 @@ from draw.cmd import IOcontrol
 from player.chenna.chenna import ChenNa
 from player.easyai.easyai import EasyAi
 # from player.animo2.Middleware_animo import Animo
-from player.animo.Record_and_GameTree import StepRecordChessBoard as Animo2
-from player.animo3.Middleware_animo import Animo
+# from player.animo.Record_and_GameTree import StepRecordChessBoard as Animo2
+from player.animo.Middleware_animo import Animo
 
 class PlayerControl():
 
@@ -29,7 +29,6 @@ class PlayerControl():
         self.channa = ChenNa(table)
         self.easyai = EasyAi(table)
         self.animo = Animo(table)
-        self.animo2 = Animo2(table)
 
     def player_turn(self, player_name, color, step):
         mess = self.gc_draw(self.grid_size/3, "blue", 3*self.grid_size, 0.5*self.grid_size, \
