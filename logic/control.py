@@ -3,8 +3,9 @@ import logic.judge as jd
 from draw.cmd import IOcontrol
 from player.chenna.chenna import ChenNa
 from player.easyai.easyai import EasyAi
-from player.animo2.Middleware_animo import Animo
+# from player.animo2.Middleware_animo import Animo
 from player.animo.Record_and_GameTree import StepRecordChessBoard as Animo2
+from player.animo3.Middleware_animo import Animo
 
 class PlayerControl():
 
